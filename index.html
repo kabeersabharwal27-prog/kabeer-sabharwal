@@ -8,57 +8,88 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; }
-    .hero-bg {
-      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('https://via.placeholder.com/1920x1080/111111/ffffff?text=KABEER+SABHARWAL');
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://via.placeholder.com/1920x1200/111111/ffffff?text=KABEER+SABHARWAL+HERO+IMAGE');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      letter-spacing: -2px;
     }
   </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white overflow-x-hidden">
 
-  <!-- HERO -->
-  <section class="hero-bg h-screen flex items-center justify-center text-center relative">
-    <div class="max-w-4xl mx-auto px-6">
+  <!-- HERO - Prahaar Style -->
+  <section class="hero h-screen flex items-center justify-center text-center relative">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-red-500 tracking-widest text-lg mb-4">— INDEPENDENT ARTIST —</p>
       <h1 class="text-7xl md:text-8xl font-black tracking-tighter">KABEER</h1>
-      <h1 class="text-6xl md:text-7xl font-black tracking-tighter text-red-500 -mt-3">SABHARWAL</h1>
-      <p class="text-2xl mt-6 text-gray-300">"RAW • REAL • RELENTLESS"</p>
+      <h1 class="text-6xl md:text-7xl font-black tracking-tighter text-red-500 -mt-4">SABHARWAL</h1>
+      <p class="mt-8 text-3xl font-light">"RAW • REAL • RELENTLESS"</p>
       
       <div class="mt-16">
-        <a href="#music" class="bg-red-600 hover:bg-red-700 px-10 py-5 rounded-full text-xl font-medium inline-flex items-center gap-3 transition">
+        <a href="#music" class="inline-flex items-center gap-4 bg-red-600 hover:bg-red-700 transition-all px-10 py-5 rounded-full text-xl font-medium">
           <i class="fas fa-play"></i> LISTEN NOW
         </a>
       </div>
     </div>
+    
+    <div class="absolute bottom-10 w-full text-center animate-bounce">
+      SCROLL ↓
+    </div>
   </section>
 
   <!-- BIO -->
-  <section class="py-24 px-6 max-w-4xl mx-auto">
-    <h2 class="text-4xl font-bold mb-10 text-center">WHO IS <span class="text-red-500">KABEER SABHARWAL?</span></h2>
-    <p class="text-lg leading-relaxed text-gray-300">
-      Proudly considering himself a true artist, Kabeer Sabharwal is a singer, composer, and lyricist who began his journey in 2018. 
-      With every song he shares his experiences, spreads love and heals hearts through music.
+  <section class="py-28 px-6 max-w-4xl mx-auto">
+    <h2 class="section-title font-bold text-center mb-12">WHO IS <span class="text-red-500">KABEER SABHARWAL?</span></h2>
+    <p class="text-lg leading-relaxed text-gray-300 text-center">
+      Proudly considering himself a true artist, Kabeer Sabharwal is a singer, composer, and lyricist. 
+      He started his professional journey in 2018 and has been creating heartfelt music in Indie Pop, R&B and Soulful style ever since.
     </p>
   </section>
 
   <!-- LATEST RELEASES -->
   <section id="music" class="py-20 bg-zinc-950">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-12 text-center">LATEST RELEASES</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Add more cards as needed -->
-        <div class="bg-zinc-900 p-6 rounded-2xl">
-          <h3 class="text-xl font-bold">Tum</h3>
-          <p class="text-red-500">2025</p>
-          <a href="https://youtu.be/1yxMfZcXghk" target="_blank" class="mt-6 block bg-white text-black text-center py-4 rounded-xl">▶ Listen</a>
+      <h2 class="section-title font-bold text-center mb-16">THE MUSIC</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-zinc-900 p-8 rounded-3xl group hover:scale-105 transition">
+          <h3 class="text-2xl font-bold">Tum</h3>
+          <p class="text-red-500">2025 • Single</p>
+          <a href="#" class="mt-8 block w-full bg-white text-black py-4 rounded-2xl text-center font-medium">▶ Listen</a>
         </div>
-        <!-- Baaki songs tu baad mein add kar lena -->
+        
+        <div class="bg-zinc-900 p-8 rounded-3xl group hover:scale-105 transition">
+          <h3 class="text-2xl font-bold">Harf</h3>
+          <p class="text-red-500">2025 • Single</p>
+          <a href="#" class="mt-8 block w-full bg-white text-black py-4 rounded-2xl text-center font-medium">▶ Listen</a>
+        </div>
+
+        <div class="bg-zinc-900 p-8 rounded-3xl group hover:scale-105 transition">
+          <h3 class="text-2xl font-bold">Sufna</h3>
+          <p class="text-red-500">2025 • Single</p>
+          <a href="#" class="mt-8 block w-full bg-white text-black py-4 rounded-2xl text-center font-medium">▶ Listen</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="py-12 text-center text-gray-500">
-    © 2026 Kabeer Sabharwal
+  <!-- CONNECT -->
+  <section class="py-28 text-center">
+    <h2 class="section-title font-bold mb-12">CONNECT WITH KABEER</h2>
+    <div class="flex justify-center gap-12 text-6xl">
+      <a href="#" class="hover:text-red-500 transition"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-red-500 transition"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="hover:text-red-500 transition"><i class="fab fa-spotify"></i></a>
+    </div>
+  </section>
+
+  <footer class="py-12 text-center text-gray-500 border-t border-zinc-800">
+    © 2026 Kabeer Sabharwal • Independent Artist
   </footer>
 
   <script>
